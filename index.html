@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo MVC</title>
+    <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+
+<div class="main-layout">
+
+    <h1 class="todo-title">Todos</h1>
+
+    <div class="todo-board __has-content">
+
+        <form class="todo-creator">
+            <button class="todo-creator_check-all" aria-label="Check all items as done"></button>
+            <div class="todo-creator_text-input-w">
+                <input class="todo-creator_text-input" type="text"  placeholder="What needs to be done?" aria-label="Input new todo text" />
+            </div>
+        </form>
+
+        <div class="todo-list">
+            <div class="todo-list_item">
+                <div class="custom-checkbox todo-list_item_ready-marker">
+                    <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox_visual">
+                        <div class="custom-checkbox_visual_icon"></div>
+                    </div>
+                </div>
+                <button class="todo-list_item_remove" aria-label="Delete todo"></button>
+                <div class="todo-list_item_text-w">
+                    <textarea class="todo-list_item_text">HTML</textarea>
+                </div>
+            </div>
+            <div class="todo-list_item">
+                <div class="custom-checkbox todo-list_item_ready-marker">
+                    <input class="custom-checkbox_target" type="checkbox" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox_visual">
+                        <div class="custom-checkbox_visual_icon"></div>
+                    </div>
+                </div>
+                <button class="todo-list_item_remove" aria-label="Delete todo"></button>
+                <div class="todo-list_item_text-w">
+                    <textarea class="todo-list_item_text __checked">CSS</textarea>
+                </div>
+            </div>
+            <div class="todo-list_item">
+                <div class="custom-checkbox todo-list_item_ready-marker">
+                    <input class="custom-checkbox_target" type="checkbox" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox_visual">
+                        <div class="custom-checkbox_visual_icon"></div>
+                    </div>
+                </div>
+                <button class="todo-list_item_remove" aria-label="Delete todo"></button>
+                <div class="todo-list_item_text-w">
+                    <textarea class="todo-list_item_text">JS</textarea>
+                </div>
+            </div>
+            <div class="todo-list_item">
+                <div class="custom-checkbox todo-list_item_ready-marker">
+                    <input class="custom-checkbox_target" type="checkbox" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox_visual">
+                        <div class="custom-checkbox_visual_icon"></div>
+                    </div>
+                </div>
+                <button class="todo-list_item_remove" aria-label="Delete todo"></button>
+                <div class="todo-list_item_text-w">
+                    <textarea class="todo-list_item_text">JS tools</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="todo-toolbar">
+            <div class="todo-toolbar_unready-counter">3 items left</div>
+
+            <div class="filters todo-toolbar_filters">
+                <button class="filters_item __selected" aria-label="Filter: All, is selected">All</button>
+                <button class="filters_item" aria-label="Filter: Active">Active</button>
+                <button class="filters_item" aria-label="Filter: Completed">Completed</button>
+            </div>
+
+            <button class="todo-toolbar_clear-completed">Clear completed</button>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
