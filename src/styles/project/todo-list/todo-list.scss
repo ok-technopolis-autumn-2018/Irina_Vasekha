@@ -17,6 +17,11 @@
             background: #f5f5f5;
             }
 
+        .todo-list_item.__hidden{
+            display:none;
+
+            }
+
         .todo-list_item_ready-marker {
             float: left;
             margin-right: 16px;
@@ -41,7 +46,7 @@
                 resize:none;
                 }
 
-            .todo-list_item_text.__checked {
+            .todo-list_item.__checked .todo-list_item_text {
                 color: #ccc;
                 text-decoration: line-through;
                 }
